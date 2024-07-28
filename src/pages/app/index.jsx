@@ -11,11 +11,20 @@ export default function App() {
       <section className='secao'>
         <h1>Estudando ReactJS</h1>
 
-        <input type="text" />
+        <input type="text" placeholder='Digite aqui'/>
+        <br/>
+
+        <select>
+          <option>Item 1</option>
+          <option>Item 2</option>
+        </select>
+        <br/>
+
         <button>Clique Aqui</button>
+        <br/>
 
         <Link to='/contato'>
-          <button>Contato</button>
+          <a>Contato</a>
         </Link>
       </section>
 

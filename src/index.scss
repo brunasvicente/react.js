@@ -7,11 +7,11 @@
 }
 
 .pagina{
-  background-color: #F5F6Fa;
+  background-color: #4d5fa885;
   min-height: 100vh;
 
   .cabecalho{
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px 50px;
 
     h1{
@@ -21,10 +21,10 @@
   }
 
   .secao{
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 40px;
-    box-shadow: 0px 0px 15px 2px #e6e6e6;
-    border-radius: 5px;
+    box-shadow: 0px 0px 15px 2px #efefef;
+    border-radius: 8px;
     margin: 50px 60px;
     max-width: 1000px;
     font: 400 22px 'Roboto';
@@ -35,25 +35,36 @@
       margin-bottom: 30px;
     }
 
-    input{
+    input, select{
       padding: 10px;
+      margin-bottom: 20px;
+      border-style: solid;
       border-color: #dfdfdf;
       border-radius: 3px;
+      border-width: 2px;
       min-width: 400px;
 
+      color: #606060;
       font: 400 22px 'Roboto';
       outline: none;
-    }
+    } 
 
     button{
       background-color: #0084ff;
       color: #fff;
 
-      padding: 10px;
+      padding: 14px 30px;
+      margin-bottom: 10px;
       border-radius: 3px;
+      border: none;
 
-      font: 400 22px 'Roboto';
+      font: 500 20px 'Roboto';
       outline: none;
+    }
+
+    a{
+      text-decoration: none;
+      color: #575656;
     }
   }
 }

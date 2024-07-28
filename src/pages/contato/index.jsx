@@ -1,10 +1,14 @@
-import './index.css'
+import './index.css';
+import { Link } from 'react-router-dom';
 
 export default function Contato() {
     return (
         <div className='pagina-contato'>
             <h1>Contato</h1>
-            <img src="/assets/icone_contato-1.png"/>
+
+            <Link to='/'>
+                <img className='botao' src="./assets/images/959160.png"/>
+            </Link>
         </div>
     )
 }

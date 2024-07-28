@@ -7,7 +7,7 @@ export default function Contato() {
             <h1>Contato</h1>
 
             <Link to='/'>
-                <img className='botao' src="./assets/images/959160.png"/>
+                <img className='botao' src="./assets/images/959160.png" alt='Seta de Voltar'/>
             </Link>
         </div>
     )

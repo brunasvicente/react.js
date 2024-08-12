@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.pagina-varestado{
+    .cont{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        font: 500 28px 'Roboyo';
+    }
+
+    
+    .entradas{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+
+        input{
+            min-width: auto;
+            width: 150px;
+        }
+
+        .resp{
+            border: 2px dashed;
+            width: 150px;
+            padding: 5px;
+            text-align: center;
+            font: 500 28px 'Roboto';
+            margin-bottom: 21px;
+        }
+
+        .operacoes{
+            min-width: auto;
+            width: 75px;
+        }
+    }
+
+    button{
+        width: 150px;
+    }
+
+
+
+    .ingresso{
+        
+        .entrada{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            & > div {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                label {
+                    width: 200px;
+                    text-align: right;
+                }
+
+                input[type=text] {
+                    min-width: auto;
+                    width: 200px ;
+                }
+
+                button {
+                    width: 200px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+
+
+    .metas{
+        .entrada{
+            margin: 30px 0px;
+        }
+
+        ul{
+            list-style: none;
+        }
+    }
+}

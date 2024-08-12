@@ -35,7 +35,7 @@
       margin-bottom: 30px;
     }
 
-    input, select{
+    input, select, textarea{
       padding: 10px;
       margin-bottom: 20px;
       border-style: solid;
@@ -48,6 +48,10 @@
       font: 400 22px 'Roboto';
       outline: none;
     } 
+
+    input[type=checkbox], input[type=radio] {
+      min-width: auto;
+    }
 
     button{
       background-color: #0084ff;

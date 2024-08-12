@@ -26,6 +26,16 @@ export default function App() {
         <Link to='/contato'>
           <a>Contato</a>
         </Link>
+        <br/>
+
+        <Link to='/eventos'>
+          <a>Eventos</a>
+        </Link>
+        <br/>
+
+        <Link to='/varestado'>
+          <a>Variáveis de Estado</a>
+        </Link>
       </section>
 
 

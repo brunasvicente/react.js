@@ -1,12 +1,12 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
+import Cabecalho from '../../components/cabecalho';
 
 export default function App() {
   return (
     <div className="pagina-app pagina">
-      <header className='cabecalho'>
-        <h1>Hello World!</h1>
-      </header>
+
+      <Cabecalho titulo='REACT JS'/>
 
       <section className='secao'>
         <h1>Estudando ReactJS</h1>
@@ -36,8 +36,13 @@ export default function App() {
         <Link to='/varestado'>
           <a>Variáveis de Estado</a>
         </Link>
-      </section>
+        <br />
 
+        <Link to='/comps'>
+          <a>Estudo de Componentes</a>
+        </Link>
+        <br/>
+      </section>
 
     </div>
   );

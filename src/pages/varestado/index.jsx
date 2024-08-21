@@ -1,9 +1,30 @@
 import './index.scss';
 import { useState } from 'react';
+import Cabecalho from '../../components/cabecalho/index.jsx';
 
 import { vendaIngresso } from '../../services/variavel-estado.js'
 
 export default function Varestado() {
+    //Vetor de Planos
+    const [plano, setPlano] = useState('')
+    const [situacao, setSituacao] = useState('')
+    const [cor, setCor] = useState('')
+    const [listaPlanos, setListaPlanos] = useState([])
+    
+    function adicionarPlano () {
+            let novoPlano = {
+                titulo: plano,
+                tempo: situacao,
+                tema: cor
+            }
+    
+            setListaPlanos([listaPlanos, novoPlano])
+            setPlano('')
+            setSituacao('')
+            setCor('')
+    }
+
+
     //Vetor
     const [novaMeta, setNovaMeta] = useState('')
     const [listaMetas, setListaMetas] = useState([])
@@ -100,9 +121,30 @@ export default function Varestado() {
     return(
         <div className='pagina-varestado pagina'>
 
-            <header className='cabecalho'>
-                <h1>React JS | Variável de Estado</h1>
-            </header>
+            <Cabecalho titulo='React JS | Variável de Estado'/>
+
+            <div className='secao planos'>
+                <h1>Meus planos atuais</h1>
+
+                <div className='entrada'>
+                    <input type="text" placeholder='Meu plano aqui' value={plano} onChange={ (a) => setPlano(a.target.value) }/>
+                    <input type="text" placeholder='Situação do plano aqui' value={situacao} onChange={ (a) => setSituacao(a.target.value) }/>
+                    <input type="text" placeholder='Cor de identificação' value={cor} onChange={ (a) => setCor(a.target.value) }/>
+                    <button onClick={adicionarPlano}>Adicionar Plano</button>
+                </div>
+
+                <div className='lista'>
+                    {listaPlanos.map((item, pos) =>
+                        <div className='plano' key={pos}>
+                            <div className='cor' style={{backgroundColor: item.tema}}>&nbsp;</div>
+                            <div>
+                                <h1> {item.titulo} </h1>
+                                <h2> {item.tempo} </h2>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
 
 
             <div className='secao metas'>

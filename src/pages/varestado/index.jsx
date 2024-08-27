@@ -18,7 +18,7 @@ export default function Varestado() {
                 tema: cor
             }
     
-            setListaPlanos([listaPlanos, novoPlano])
+            setListaPlanos([...listaPlanos, novoPlano])
             setPlano('')
             setSituacao('')
             setCor('')

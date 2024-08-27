@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.comp-cartao-filme{
+    padding: 20px;
+    box-shadow: 0px -14px 20px #e5e5e5;
+    border-radius: 15px;
+    position: relative;
+
+    img{
+        width: 200px;
+    }
+
+    p{
+        font: 500 20px 'Roboto';
+        text-align: center;
+    }
+
+    .classificacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font: 500 18px 'Roboto';
+        background-color: #2fd42f;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .classificacao-l{
+        background-color: #2fd42f;
+    }
+
+    .classificacao-12{
+        background-color: #fffb00;
+    }
+
+    .classificacao-14{
+        background-color: #ff8800;
+    }
+
+    .classificacao-16{
+        background-color: red;
+    }
+
+    .classificacao-18{
+        background-color: #000;
+    }
+}

@@ -38,6 +38,11 @@ export default function App() {
           <a>Renderização Condicional</a>
         </Link>
         <br/>
+
+        <Link to='/efeito'>
+          <a>Estudos sobre Efeitos</a>
+        </Link>
+        <br/>
       </section>
 
     </div>

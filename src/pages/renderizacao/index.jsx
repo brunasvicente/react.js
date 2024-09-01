@@ -44,26 +44,9 @@ export default function RenderizacaoCondicional() {
         setBiscoitoSorte(!biscoitoSorte)
     }
 
-    //Inscrição de Usuário
-    const [nome, setNome] = useState('')
-    const [email, setEmail] = useState('')
-    const [senha, setSenha] = useState('')
-
-    function cadastrar() {
-    }
-
     return(
         <div className='pagina-renderizacao-condicional pagina'>
             <Cabecalho titulo="React JS | Renderização Condicional"/>
-
-            <div className='secao inscricao'>
-                <h1>Formulário de Inscrição de Usuário</h1>
-
-                <input type="text" placeholder='Nome' value={nome} onChange={a => setNome(a.target.value)}/>
-                <input type="text" placeholder='Email' value={email} onChange={a => setEmail(a.target.value)}/>
-                <input type="password" placeholder='Senha' value={senha} onChange={a => setSenha(a.target.value)}/>
-                <button onClick={cadastrar}>Cadastrar-se</button>
-            </div>
 
             <div className='secao filmes'>
                 <h1>Catálogo de Filmes</h1>

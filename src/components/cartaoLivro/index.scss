@@ -1,0 +1,35 @@
+.comp-cartao-livro {
+    display: flex;
+    flex-wrap: nowrap;
+
+    width: 200px;
+
+    .cartao {
+
+
+        img {
+            margin-top: 25px;
+            width: 200px;
+        }
+
+        h3 {
+            color: #666;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        hr {
+            margin-left: 3px;
+            margin-right: 3px;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

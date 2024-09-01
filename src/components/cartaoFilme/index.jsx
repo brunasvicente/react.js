@@ -13,6 +13,18 @@ export function CartaoFilme(props) {
     return(
         <div className='comp-cartao-filme'>
             <img src={props.item.urlCapa} alt="Cartaz do filme Divertida Mente 2" />
+
+            {props.item.estreia != '' &&
+                <div className='estreia'>
+
+                    {props.item.destaque == true &&
+                        <i className='fa fa-star estrela'></i>
+                    }
+
+                    Estreia {props.item.estreia}
+                </div>
+            }
+
             <p> {props.item.nome} </p>
             <div className={'classificacao ' + cor()}> {props.item.classificacao} </div>
         </div>

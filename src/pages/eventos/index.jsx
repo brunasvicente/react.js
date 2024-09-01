@@ -1,5 +1,8 @@
 import './index.scss'
+
+//Componentes
 import Cabecalho from '../../components/cabecalho'
+
 
 export default function Eventos() {
     function clicou() {
@@ -21,6 +24,7 @@ export default function Eventos() {
     }
 
     return(
+
         <div className='pagina-eventos pagina'>
             <Cabecalho titulo='React JS | Eventos'/>
 

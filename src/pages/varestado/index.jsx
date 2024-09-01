@@ -1,8 +1,12 @@
 import './index.scss';
 import { useState } from 'react';
+
+//Componentes
 import Cabecalho from '../../components/cabecalho/index.jsx';
 
+//Lógicas
 import { vendaIngresso } from '../../services/variavel-estado.js'
+
 
 export default function Varestado() {
     //Vetor de Planos
@@ -117,8 +121,8 @@ export default function Varestado() {
     const [ tituloS5, setTituloS5 ] = useState('Oie')
     const [ descricao, setDescricao ] = useState('Digite algo')
 
-
     return(
+
         <div className='pagina-varestado pagina'>
 
             <Cabecalho titulo='React JS | Variável de Estado'/>

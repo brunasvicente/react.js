@@ -6,12 +6,15 @@ import Cabecalho from '../../components/cabecalho';
 
 
 export default function App() {
+  
   return (
 
     <div className="pagina-app pagina">
 
       <Cabecalho titulo='REACT JS'/>
 
+
+      {/* Estudos */}
       <section className='secao'>
         <h1>Tópicos de Estudo</h1>
         <Link to='/contato'>
@@ -45,6 +48,8 @@ export default function App() {
         <br/>
       </section>
 
+
+      {/* Site da Feira de Profissões */}
       <section className='secao'>
         <h1>Feira do Frei</h1>
 

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*Estilização da Página*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pagina-rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #182754;
+
+    h1 {
+        color: #fff;
+        font: 500 20px 'Inter';
+    }
+
+    p {
+        color: #fff;
+        font: 300 13px 'Inter';
+    }
+
+
+    .info-principais {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+
+        img {
+            height: 130px;
+        }
+
+        p {
+            color: #fff;
+            height: 100px;
+            margin-top: 55px;
+        }
+
+        hr {
+            margin-bottom: 35px;
+        }
+    }
+
+
+    .inicio {
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 15px 0px;
+        }
+    }
+
+
+    .contatos {
+        h1 {
+            margin-bottom: -15px;
+        }
+
+        #contato-img {
+            height: 25px;
+        }
+
+
+        .sub1 {
+            display: flex;
+            flex-direction: row;
+            margin: 35px 0px 20px 0px;
+            gap: 10px;
+        }
+
+        .sub2 {
+            display: flex;
+            flex-direction: row;
+            margin: -10px 0px 20px 0px;
+            gap: 10px;
+        }
+
+        .sub3 {
+            display: flex;
+            flex-direction: row;
+            margin: -10px 0px 20px 0px;
+            gap: 10px;
+        }
+    }
+
+
+    .redes {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+
+        i {
+            color: #fff;
+        }
+    }
+}

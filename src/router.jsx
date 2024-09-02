@@ -9,6 +9,9 @@ import Comps from './pages/comps';
 import RenderizacaoCondicional from './pages/renderizacao';
 import Efeito from './pages/efeito';
 
+import Rodape from './pages/rodape';
+import Faq from './pages/faq';
+
 export default function Navegacao() {
     return(
         <BrowserRouter>
@@ -20,6 +23,9 @@ export default function Navegacao() {
                 <Route path='/comps' element={ <Comps/> }/>
                 <Route path='/renderizacao' element={ <RenderizacaoCondicional/> }/>
                 <Route path='/efeito' element={ <Efeito/> }/>
+
+                <Route path='/rodape' element={ <Rodape/> }/>
+                <Route path='/faq' element={ <Faq/> }/>
 
                 <Route path='*' element={ <NaoEncontrado/> }/>
             </Routes>

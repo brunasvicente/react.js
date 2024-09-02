@@ -45,6 +45,20 @@ export default function App() {
         <br/>
       </section>
 
+      <section className='secao'>
+        <h1>Feira do Frei</h1>
+
+        <Link to='/rodape'>
+          <a>Rodapé da Feira</a>
+        </Link>
+        <br/>
+
+        <Link to='/faq'>
+          <a>FAQ da Feira</a>
+        </Link>
+        <br/>
+      </section>
+
     </div>
   );
 }

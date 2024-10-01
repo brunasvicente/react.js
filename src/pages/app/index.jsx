@@ -67,7 +67,7 @@ export default function App() {
 
       {/* Prática com Exercícios */}
       <section className='secao'>
-        <h1>Exercícios Práticos</h1>
+        <h1>Prática</h1>
 
         <Link to='/api-cadastrousuario'>
           <a>API - Cadastro de Usuário</a>

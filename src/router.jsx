@@ -15,6 +15,9 @@ import Formulario from './pages/praticaFormulario';
 import Rodape from './pages/rodape';
 import Faq from './pages/faq';
 
+import CadastrarUsuario from './pages/api-cadastrousuario';
+import CadastrarAutonomo from './pages/api-cadastroautonomo';
+
 export default function Navegacao() {
     return(
         <BrowserRouter>
@@ -35,6 +38,9 @@ export default function Navegacao() {
                 {/* Páginas da Feira de Profissões */}
                 <Route path='/rodape' element={ <Rodape/> }/>
                 <Route path='/faq' element={ <Faq/> }/>
+
+                <Route path='/api-cadastrousuario' element={ <CadastrarUsuario/> }/>
+                <Route path='/api-cadastroautonomo' element={ <CadastrarAutonomo/> }/>
 
                 <Route path='*' element={ <NaoEncontrado/> }/>
             </Routes>

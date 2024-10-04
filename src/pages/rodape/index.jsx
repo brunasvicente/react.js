@@ -33,21 +33,21 @@ export default function Rodape() {
 
                 <div className='sub3'>
                     <img id='contato-img' src="/assets/images/localizacao.png" alt="" />
-                    <p>AV. CEL. OCTAVIANO DE FREITAS COSTA, 463 JD <br /> VELEIROS SÃO PAULO - SP</p>
+                    <p>AV. CEL. OCTAVIANO DE FREITAS COSTA, <br /> 463 JD VELEIROS SÃO PAULO - SP</p>
                 </div>
             </div>
 
             <div className='redes'>
                 <a href="https://www.youtube.com/@institutosocialnossasenhor3548">
-                    <i class="fa-brands fa-youtube fa-2xl" id='icone'></i>
+                    <i class="fa-brands fa-youtube fa-2xl" id='youtube'></i>
                 </a>
                 
                 <a href="https://www.facebook.com/institutonsfatima/">
-                    <i class="fa-brands fa-facebook-f fa-2xl" id='icone'></i>
+                    <i class="fa-brands fa-facebook-f fa-2xl" id='facebook'></i>
                 </a>
                 
                 <a href="https://www.instagram.com/institutonsfatima/">
-                    <i class="fa-brands fa-instagram fa-2xl" id='icone'></i>
+                    <i class="fa-brands fa-instagram fa-2xl" id='instagram'></i>
                 </a>
             </div>
         </div>

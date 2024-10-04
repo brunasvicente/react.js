@@ -8,6 +8,9 @@ import Varestado from './pages/varestado';
 import Comps from './pages/comps';
 import RenderizacaoCondicional from './pages/renderizacao';
 import Efeito from './pages/efeito';
+import Api from './pages/api';
+
+import Formulario from './pages/praticaFormulario';
 
 import Rodape from './pages/rodape';
 import Faq from './pages/faq';
@@ -16,6 +19,7 @@ export default function Navegacao() {
     return(
         <BrowserRouter>
             <Routes>
+                {/* Páginas de Estudo */}
                 <Route path='/' element={ <App/> }/>
                 <Route path='/contato' element={ <Contato/> }/>
                 <Route path='/eventos' element={ <Eventos/> }/>
@@ -23,7 +27,12 @@ export default function Navegacao() {
                 <Route path='/comps' element={ <Comps/> }/>
                 <Route path='/renderizacao' element={ <RenderizacaoCondicional/> }/>
                 <Route path='/efeito' element={ <Efeito/> }/>
+                <Route path='/api' element={ <Api/> }/>
 
+                {/* Páginas de Prática */}
+                <Route path='/praticaFormulario' element={ <Formulario/> }/>
+
+                {/* Páginas da Feira de Profissões */}
                 <Route path='/rodape' element={ <Rodape/> }/>
                 <Route path='/faq' element={ <Faq/> }/>
 

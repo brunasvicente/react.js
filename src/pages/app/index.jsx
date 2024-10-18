@@ -95,6 +95,18 @@ export default function App() {
         </Link>
       </section>
 
+
+
+
+      <section className='secao'>
+        <h1>Extras</h1>
+
+        <Link to='/chatbot'>
+          <a>ChatBot - TCC</a>
+        </Link>
+        <br />
+      </section>
+
     </div>
   );
 }

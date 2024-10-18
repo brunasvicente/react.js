@@ -18,6 +18,10 @@ import Faq from './pages/faq';
 import CadastrarUsuario from './pages/api-cadastrousuario';
 import CadastrarAutonomo from './pages/api-cadastroautonomo';
 
+
+
+import Chatbot from './pages/chatbot';
+
 export default function Navegacao() {
     return(
         <BrowserRouter>
@@ -41,6 +45,8 @@ export default function Navegacao() {
 
                 <Route path='/api-cadastrousuario' element={ <CadastrarUsuario/> }/>
                 <Route path='/api-cadastroautonomo' element={ <CadastrarAutonomo/> }/>
+                <Route path='/chatbot' element={ <Chatbot/> }/>
+
 
                 <Route path='*' element={ <NaoEncontrado/> }/>
             </Routes>
